@@ -1,0 +1,205 @@
+/*------------------------------------------------ Home-page -----------------------------------------------------------------*/
+
+/* Tilbakestill Stiler */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;             /* Nullstill margin */
+    padding: 0;            /* Nullstill padding */
+    box-sizing: border-box; /* Sett boksen til grenseboksen for riktig oppførsel */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Angi skrifttypen for hele nettsiden */
+}
+
+
+/* Stiler for Hode */
+header {
+    background-color: #0b0b0b; /* Bakgrunnsfarge */
+    color: white;               /* Tekstfarge */
+    padding: 10px;              /* Padding (avstand) */
+}
+
+.header-content {
+    display: flex;                   /* Bruk fleksibelt layout (Flexbox) */
+    justify-content: space-between;   /* Plasser elementer med lik avstand mellom seg */
+    align-items: center;              /* Sentrer vertikalt */
+    font-size: x-large;               /* Tekststørrelse */
+}
+
+.fa-solid {
+    font-size: 20px;  /* Størrelse på Font Awesome-ikoner */
+    margin: 0 10px;   /* Margin rundt ikoner */
+}
+
+
+/* Stiler for Navigasjonsmeny (Navbar) */
+nav ul.navbar {
+    list-style-type: none; /* Fjern punkttegn for listen */
+    display: flex;         /* Bruk fleksibelt layout (Flexbox) */
+    padding: 10px;         /* Padding (avstand) */
+}
+
+nav ul.navbar li {
+    margin-right: 20px; /* Høyremarg for hver listeelement */
+}
+
+nav ul.navbar a {
+    text-decoration: none; /* Fjern understrek på lenkene */
+    color: white;         /* Tekstfarge */
+}
+
+/* Stiler for Introduksjonsseksjonen */
+.intro {
+    padding: 20px;      /* Padding (avstand) */
+    text-align: center; /* Sentrer tekst */
+}
+
+.intro h3 {
+    font-weight: 100;    /* Tekstvekt */
+    font-size: smaller;  /* Tekststørrelse */
+}
+
+.intro p{
+    font-size: small;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.logo img{
+    margin: 0;
+    padding-bottom: 0;
+}
+
+/* Stiler for seksjon med informasjon om sko (Shoe Text) */
+.shoe-text p {
+    display: flex;                 /* Bruk fleksibelt layout (Flexbox) */
+    align-items: center;           /* Sentrer vertikalt */
+    justify-content: space-evenly; /* Plasser elementer med lik avstand mellom seg */
+    font-size: large;             /* Tekstvekt */
+    opacity: 100%;                 /* Gjennomsiktighet (50%) */
+    font-style: italic;
+}
+
+/* Stiler for bildetekst (Figcaption) */
+figcaption {
+    background-color: #f0f4ec; /* Bakgrunnsfarge */
+    padding: 10px;             /* Padding (avstand) */
+    border-radius: 5px;        /* Runde hjørner */
+    font-size: small;          /* Tekststørrelse */
+}
+
+figure img {
+    max-width: 40%;     /* Maksimumsbredde for bilder */
+    border-radius: 0.5%; /* Litt avrunding på hjørnene */
+}
+
+/* Stiler for tekst om sko (Text About Shoes) */
+.text-about-shoes {
+    display: flex;           /* Bruk fleksibelt layout (Flexbox) */
+    align-self: center;      /* Sentrer vertikalt */
+    font-weight: 500;        /* Tekstvekt */
+    font-size: medium;       /* Tekststørrelse */
+    text-align: justify;     /* Tekstjustering (tekst rettferdiggjort) */
+    line-height: 1.5;       /* Linjeavstand (1.5 ganger standardavstand) */
+}
+
+/* Stiler for produktdelen med CSS Grid */
+main .product-section {
+    display: grid; /* Bruk rutenettlayout (Grid) */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Lag et rutenett med fleksible kolonner */
+    gap: 20px; /* Legg til avstand mellom elementer */
+    justify-content: center; /* Sentrer elementer horisontalt */
+    
+}
+
+
+.product-section article {
+    flex: 1;
+    padding-left: 9rem;
+    padding-right: 4rem;
+}
+
+section article figure img{
+    width: 40%;
+}
+
+.product-section{
+    font-size: small;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+
+.product-section p{
+    padding-left: 1.5rem;
+}
+
+/* Stiler for bunnen av siden (Footer) */
+footer ul.footer-links {
+    list-style-type: none; /* Fjern punkttegn for listen */
+    display: flex;         /* Bruk fleksibelt layout (Flexbox) */
+    justify-content: center; /* Sentrer elementer horisontalt */
+    background-color: #1b1c1b; /* Bakgrunnsfarge */
+    padding: 10px 0;       /* Padding (avstand) */
+}
+
+footer li {
+    margin: 0 10px; /* Margin mellom elementer */
+    color: #f4f4f4; /* Tekstfarge */
+}
+
+/* Medieforespørsel for responsivt design */
+@media (max-width: 768px) {
+    main .product-section {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Juster kolonner for mindre skjermer */
+    }
+}
+
+/*------------------------------------------------ Produkt-side -----------------------------------------------------------------*/
+.go-green-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    font-size: large;
+  }
+  
+  .go-green-text p {
+    margin: 10px 0;
+  }
+  
+
+.indexing-prods{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 6rem;
+    padding-bottom: 1rem;
+}
+
+
+.indexing-prods article img{
+    padding-top: 0.2rem;
+    max-width: 65%;
+    border-radius: 0.5%;
+
+.indexing-prods article p{
+    padding-top: 3rem;
+    padding-left: 2rem;
+    font-size: large;
+    font-weight: 500;
+}
+
+/*------------------------------------------------ Nike-side -----------------------------------------------------------------*/
+
+
+/*------------------------------------------------ Adidas-side -----------------------------------------------------------------*/
+
+/*------------------------------------------------ Air Jordans-side -----------------------------------------------------------------*/
+
+
+
+
+
+
+
