@@ -191,6 +191,31 @@ footer li {
 }
 
 /*------------------------------------------------ Nike-side -----------------------------------------------------------------*/
+.indexing-prods{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; /* Sentrer elementene vertikalt */
+    padding-left: 6rem;
+    padding-bottom: 1rem;
+}
+
+.indexing-prods h2{
+    flex: 1; /* Opptar venstre side med lik plass */
+}
+
+.indexing-prods img{
+    max-width: 40%;
+    border-radius: 0.5%;
+}
+
+.indexing-prods p{
+    flex: 1; /* Opptar høyre side med lik plass */
+    font-size: large;
+    font-weight: 500;
+    text-align: center; /* Sentrer teksten horisontalt */
+    padding: 0 2rem; /* Legg til padding til teksten */
+}
 
 
 /*------------------------------------------------ Adidas-side -----------------------------------------------------------------*/
