@@ -14,7 +14,7 @@
         <div class="header-content">
             <i class="fas fa-bars"></i>
             <i class="fas fa-search"></i>
-            <a href="index.html"> <img src="img/Hemp-tredz-logo.png" alt=""></a>
+            <a href="index.html"> <img src="img/Hemp-tredz-logo.png" alt="Logo for Hemp Tredz"></a>
             <i class="fas fa-user"></i>
             <i class="fas fa-shopping-cart"></i>
         </div>
@@ -22,18 +22,22 @@
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produkt.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main itemscope itemtype="https://schema.org/Product">
         <div class="indexing-prods">
             <article>
-                <h2>Nike</h2>
+                <h2 itemprop="name">Nike</h2>
                 <h2>Just Do It</h2>
-                <img src="img/meny/nike-5126389_1280.jpg" alt="Nike-shoe">
+                <img src="img/meny/nike-5126389_1280.jpg" alt="Nike-shoe" itemprop="image">
                 <p>Hemp made</p>
-                <p>Price: 1200 NOK</p>
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer"> 
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <span itemprop="Price">Price: 1200 NOK</span>
+                </div>
                 <button>add too cart</button>
             </article>
 

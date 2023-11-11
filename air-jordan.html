@@ -14,7 +14,7 @@
         <div class="header-content">
             <i class="fas fa-bars"></i>
             <i class="fas fa-search"></i>
-            <a href="index.html"> <img src="img/Hemp-tredz-logo.png" alt=""></a>
+            <a href="index.html"> <img src="img/Hemp-tredz-logo.png" alt="Logo for Hemp Tredz"></a>
             <i class="fas fa-user"></i>
             <i class="fas fa-shopping-cart"></i>
         </div>
@@ -22,17 +22,22 @@
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produkt.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main itemscope itemtype="https://schema.org/Product">
         <div class="indexing-prods">
             <article>
-                <h2>Air Jordan</h2>
+                <h2 itemprop="name">Air Jordan</h2>
                 <h2>Be Like Mike”</h2>
-                <img src="img/meny/basketball-3505340_1280.jpg" alt="Air-Jordan-shoe">
-                <p>Price: 2600 NOK</p>
+                <img src="img/meny/basketball-3505340_1280.jpg" alt="Air-Jordan-shoe" itemprop="image">
+                <p>Hemp made</p>
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <span itemprop="Price">Price: 2600 NOK</span>
+                </div>
                 <button>add too cart</button>
             </article>
 
